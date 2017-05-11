@@ -1,4 +1,4 @@
-package ifree.java.utils.beanutils;
+package zhangxiuwu.utils.beanutils;
 
 import java.util.Date;
 
