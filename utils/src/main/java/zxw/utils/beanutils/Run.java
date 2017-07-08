@@ -1,4 +1,4 @@
-package zhangxiuwu.utils.beanutils;
+package zxw.utils.beanutils;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
