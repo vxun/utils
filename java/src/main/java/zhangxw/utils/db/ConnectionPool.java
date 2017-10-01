@@ -1,5 +1,6 @@
 package zhangxw.utils.db;
 
+import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,8 +15,10 @@ import org.apache.log4j.Logger;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
-public class ConnectionPool {
+public class ConnectionPool implements Serializable{
 
+	private static final long serialVersionUID = -6700024128853962680L;
+	
 	private static Logger msgLogInfo = Logger.getLogger("msgInfo");
 	private static DataSource ds;
 	private static ConnectionPool pool;
@@ -349,7 +352,6 @@ public class ConnectionPool {
 				e.printStackTrace();
 			}
 		}
-		
 	}
 
 }
