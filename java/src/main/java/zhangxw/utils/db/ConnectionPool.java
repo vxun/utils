@@ -1,6 +1,7 @@
 package zhangxw.utils.db;
 
 import java.io.Serializable;
+import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,6 +15,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
+import zhangxw.utils.db.ConnectionPool.Column.Type;
 
 public class ConnectionPool implements Serializable{
 
@@ -328,6 +330,43 @@ public class ConnectionPool implements Serializable{
 		return list;
 	}
 
+	public static <T> void insertBatch(List<T> ts, Class<T> clazz) {
+		
+	}
+
+
+	public <T> String generateSql(Class<T> clazz) {
+		Field[] fields = clazz.getDeclaredFields();
+		if (fields == null || fields.length == 0) {
+			return null;
+		}
+		Table tableAnnotation = clazz.getAnnotation(Table.class);
+
+		for (int i = 0; i < fields.length; i++) {
+			Field field = fields[i];
+			Column columnAnnotation = field.getDeclaredAnnotation(Column.class);
+			String column = columnAnnotation.column();
+			Type type = columnAnnotation.type();
+		}
+	}
+
+
+	public @interface Column{
+		String column() default "";
+		Type type();
+
+		enum Type {
+			VARCHAR,
+			INT,
+			DOUBLE,
+		}
+	}
+
+	public @interface Table {
+		String table();
+	}
+
+
 	public static void free(ResultSet rs, Statement statement, Connection conn) {
 		if (rs != null) {
 			try {
@@ -353,5 +392,4 @@ public class ConnectionPool implements Serializable{
 			}
 		}
 	}
-
 }

@@ -2,3 +2,5 @@
 *.project
 utils/.settings
 /java/.settings
+/java/.idea/
+/java/*.iml
