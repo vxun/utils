@@ -348,6 +348,7 @@ public class ConnectionPool implements Serializable{
 			String column = columnAnnotation.column();
 			Type type = columnAnnotation.type();
 		}
+		return null;
 	}
 
 
