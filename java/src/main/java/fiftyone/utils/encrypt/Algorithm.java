@@ -1,22 +1,23 @@
 /**
  * Project Name:utils 
- * Class Name:zhangxw.utils.encrypt.Transformation  
- * Date:2017年5月7日下午12:08:52 
+ * Class Name:Algorithm
+ * Date:2017年5月7日下午12:08:36 
  * Copyright (c) 2017, zhangxw All Rights Reserved. 
  */
-package zhangxw.utils.encrypt;
+package fiftyone.utils.encrypt;
 
 /**
  * @author zhangxw
  * TODO 一句话描述	
  * @Version 1.0
- * Date 2017-05-07 12:08:52 
+ * Date 2017-05-07 12:08:36 
  */
-public enum Transformation {
-	AES_CBC_PKCS5PADDING("AES/CBC/PKCS5Padding");
+public enum Algorithm {
+	AES("AES"), DES("DES"), SHA1("SHA-1");
+
 	public final String val;
 
-	Transformation(String val) {
+	Algorithm(String val) {
 		this.val = val;
 	}
 

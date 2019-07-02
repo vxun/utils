@@ -4,7 +4,7 @@
  * Date:2017年5月6日下午9:56:06 
  * Copyright (c) 2017, zhangxw All Rights Reserved. 
  */
-package zhangxw.utils.encrypt;
+package fiftyone.utils.encrypt;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidAlgorithmParameterException;
@@ -21,7 +21,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-import zhangxw.utils.common.StringUtils;
+import fiftyone.utils.common.StringUtils;
 
 /**
  * @author zhangxw TODO 加密解密工具类

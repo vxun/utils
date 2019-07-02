@@ -1,4 +1,4 @@
-package zhangxw.utils.db;
+package fiftyone.utils.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

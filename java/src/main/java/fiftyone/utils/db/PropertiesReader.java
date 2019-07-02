@@ -1,4 +1,4 @@
-package zhangxw.utils.db;
+package fiftyone.utils.db;
 
 import java.io.File;
 import java.io.FileInputStream;

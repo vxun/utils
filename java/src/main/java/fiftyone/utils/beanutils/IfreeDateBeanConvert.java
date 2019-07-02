@@ -1,4 +1,4 @@
-package zxw.utils.beanutils;
+package fiftyone.utils.beanutils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

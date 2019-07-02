@@ -1,14 +1,14 @@
 /**
  * Project Name:utils 
- * Class Name:zhangxw.utils.encrypt.SHAEncryptUtils  
+ * Class Name:SHAEncryptUtils
  * Date:2017年5月7日下午12:09:48 
  * Copyright (c) 2017, zhangxw All Rights Reserved. 
  */
-package zhangxw.utils.encrypt;
+package fiftyone.utils.encrypt;
 
 import java.security.MessageDigest;
 
-import zhangxw.utils.common.StringUtils;
+import fiftyone.utils.common.StringUtils;
 
 /**
  * @author zhangxw

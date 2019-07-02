@@ -1,4 +1,4 @@
-package zhangxw.utils.db;
+package fiftyone.utils.db;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
@@ -15,7 +15,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
-import zhangxw.utils.db.ConnectionPool.Column.Type;
+import fiftyone.utils.db.ConnectionPool.Column.Type;
 
 public class ConnectionPool implements Serializable{
 

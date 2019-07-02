@@ -1,10 +1,10 @@
 /**
  * Project Name:utils 
- * Class Name:zhangxw.utils.common.HttpsUtils  
+ * Class Name:HttpsUtils
  * Date:2017年5月7日下午2:17:47 
  * Copyright (c) 2017, zhangxw All Rights Reserved. 
  */
-package zhangxw.utils.common;
+package fiftyone.utils.common;
 
 import java.io.BufferedReader;
 import java.io.IOException;

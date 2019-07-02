@@ -1,4 +1,4 @@
-package zxw.utils.beanutils;
+package fiftyone.utils.beanutils;
 
 import java.util.Date;
 

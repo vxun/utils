@@ -1,4 +1,4 @@
-package zhangxw.utils.common;
+package fiftyone.utils.common;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -4,11 +4,11 @@
  * Date:2017年5月7日上午9:57:38 
  * Copyright (c) 2017, zhangxw All Rights Reserved. 
  */
-package zhangxw.utils.common;
+package fiftyone.utils.common;
 
 /**
  * @author zhangxw
- * TODO 一句话描述	
+ * TODO 一句话描述
  * @Version 1.0
  * Date 2017-05-07 09:57:38 
  */
