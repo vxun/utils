@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -87,9 +88,7 @@ public class MySQLConnectionUtils {
 		} finally {
 			close(conn, statement, null);
 		}
-		
 	}
-	
 
 	public static <T> T executeQuery(String sql, ResultSetHandler<T> handler, Object... params) {
 		Connection conn = null;
